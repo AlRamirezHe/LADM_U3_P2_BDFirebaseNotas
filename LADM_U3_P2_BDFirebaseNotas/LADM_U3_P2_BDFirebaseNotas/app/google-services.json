@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1037136041545",
+    "project_id": "practica2unidad3-84d6e",
+    "storage_bucket": "practica2unidad3-84d6e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037136041545:android:0d4e0813c84a494ccb5198",
+        "android_client_info": {
+          "package_name": "com.example.alramirezh.ladm_u3_p2_bdfirebasenotas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037136041545-e3ib6q141pgrfugacumg767fj3op229q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK6UJ14HIAeYsmJxOlOph7ii_ZDtpqpIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037136041545-e3ib6q141pgrfugacumg767fj3op229q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

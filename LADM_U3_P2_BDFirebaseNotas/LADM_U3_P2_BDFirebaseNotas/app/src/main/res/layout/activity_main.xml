@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grisLigero"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparente">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/transparente" >
+
+            <!-- HEADER -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/rojoOscuro" >
+
+                <!-- BOTON REGRESAR -->
+               <!-- <ImageView
+                    android:id="@+id/botonRegresar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icono_regresar"
+                    app:tint="@color/rojoLigero"
+                    android:layout_marginVertical="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="8dp"/> -->
+
+                <!-- TITULO -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:layout_gravity="center_vertical"
+                    android:text="Notas"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/rojoLigero"
+                    android:gravity="center"
+                    android:paddingVertical="7dp"
+                    android:paddingHorizontal="2dp"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
+
+                <!-- BOTON DESCARGAR -->
+                <ImageView
+                    android:id="@+id/botonSubir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icono_subir"
+                    android:layout_marginVertical="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="4dp"
+                    app:tint="@color/rojoLigero"
+                    />
+
+
+                <!-- BOTON AGREGAR-->
+                <ImageView
+                    android:id="@+id/botonAgregar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icono_agregar"
+                    android:layout_marginVertical="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"/>
+
+            </LinearLayout>
+
+
+            <!-- CONTENEDOR NOTAS -->
+            <LinearLayout
+                android:id="@+id/contenedorNotas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/transparente"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="10dp"
+                android:paddingHorizontal="4dp">
+
+                <!-- BUSCAR POR TITULO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="15dp">
+
+                    <ImageView
+                        android:id="@+id/ayuda_campoBuscar"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icono_ayuda"
+                        app:tint="@color/rojoOscuro"
+                        android:layout_marginRight="10dp" />
+
+                    <EditText
+                        android:id="@+id/campoBuscar"
+                        android:inputType="textMultiLine"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="Titulo"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/rojoOscuro"
+                        android:layout_gravity="center_vertical" />
+
+                    <!-- BOTON BUSCAR  -->
+                    <ImageView
+                        android:id="@+id/botonBuscar"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icono_buscar"
+                        app:tint="@color/rojoOscuro"
+                        android:layout_marginLeft="10dp" />
+
+                </LinearLayout>
+
+                <!-- CONTENEDOR RESULTADO DE NOTAS -->
+                <LinearLayout
+                    android:id="@+id/contenedorRNotas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/transparente"
+                    android:layout_marginVertical="4dp"
+                    android:paddingHorizontal="4dp" >
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
